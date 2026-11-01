@@ -138,13 +138,28 @@ footer{text-align:center;color:var(--mut);padding:30px;font-size:.85rem;border-t
 .vidw p{color:var(--mut)}
 .vidp{width:min(300px,100%);aspect-ratio:9/16;border-radius:18px;background:#000;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 60px -24px rgba(0,0,0,.8);display:block}
 @media(max-width:820px){.vidw{grid-template-columns:1fr;justify-items:center;text-align:center}.vidp{width:min(300px,86vw)}}
+
+/* Medios digitales */
+.mdh{display:grid;grid-template-columns:1.15fr .85fr;gap:0;overflow:hidden;padding:0;margin-bottom:20px}
+.mdh .ph{display:block;background:#000}.mdh .ph img{width:100%;height:100%;object-fit:cover;object-position:left top;display:block}
+.mdh .tx{padding:34px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.mdh h3{font-size:1.7rem;letter-spacing:-.02em}.mdh p{color:var(--mut)}
+.mdshots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.mdshots figure{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel)}
+.mdshots img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:left top;display:block;transition:.5s}
+.mdshots a:hover img{transform:scale(1.04)}.mdshots a{display:block;overflow:hidden}
+.mdshots figcaption{padding:14px 16px;font-size:.88rem;color:var(--mut)}.mdshots figcaption b{display:block;color:var(--tx);margin-bottom:2px}
+.mdf{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.mdf .card{padding:20px}.mdf h4{font-size:1rem;margin-bottom:6px}.mdf p{color:var(--mut);font-size:.88rem}
+.mdf .ic{font-size:1.4rem;display:block;margin-bottom:8px}
+@media(max-width:820px){.mdh,.mdshots{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="bgfx" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i></div>
 <nav><div class="wrap">
   <a href="#top" class="logo" aria-label="Josué Zerda"><img src="img/jz-48.png" alt="JZ" style="width:36px;height:36px;border-radius:9px;display:block"></a>
-  <ul><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#emprendimientos">Emprendimientos</a></li><li><a href="#fusion">Fusión IA</a></li><li><a href="#sistemas">Sistemas</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#trayectoria">Trayectoria</a></li><li><a href="#contacto">Contacto</a></li></ul>
+  <ul><li><a href="#medios">Medios digitales</a></li><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#emprendimientos">Emprendimientos</a></li><li><a href="#fusion">Fusión IA</a></li><li><a href="#sistemas">Sistemas</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#trayectoria">Trayectoria</a></li><li><a href="#contacto">Contacto</a></li></ul>
 </div></nav>
 
 <main class="wrap" id="top">
@@ -172,6 +187,38 @@ footer{text-align:center;color:var(--mut);padding:30px;font-size:.85rem;border-t
       <div class="card stat"><b class="grad" data-n="30">0</b><span>sistemas desarrollados</span></div>
       <div class="card stat"><b class="grad" data-n="8">0</b><span>rubros con tecnología</span></div>
       <div class="card stat"><b class="grad">∞</b><span>ideas por implementar</span></div>
+    </div>
+  </section>
+
+  <section id="medios" class="rv" style="padding-top:0">
+    <div class="eyebrow">// medios digitales</div>
+    <h2>Desarrollo de medios digitales <span class="grad">de Santiago del Estero</span></h2>
+    <p class="syslead">Diseño y desarrollo plataformas para medios de comunicación de la provincia, con tecnología de última generación pensada para todos los lectores.</p>
+    <article class="card mdh">
+      <a class="ph" href="img/medios/portada.jpg" target="_blank" rel="noopener"><img src="img/medios/portada.jpg" alt="Portada de Nuevo Diario Web" loading="lazy"></a>
+      <div class="tx">
+        <div class="eyebrow">Caso destacado</div>
+        <h3>Nuevo Diario Web</h3>
+        <p>El portal del diario de Santiago del Estero: noticias las 24 horas, radio LV11 en vivo, galerías de sociales, edición impresa, clasificados y empleos, con cotizaciones y clima en tiempo real.</p>
+        <p>Incluye una sala de redacción digital propia, donde el equipo gestiona noticias, portada, radio, WhatsApp y todo el multimedio en un solo lugar.</p>
+        <a class="btn p" href="https://nuevodiarioweb.com.ar/" target="_blank" rel="noopener" style="align-self:flex-start">Visitar el sitio ↗</a>
+      </div>
+    </article>
+    <div class="mdshots">
+      <figure><a href="img/medios/accesibilidad.jpg" target="_blank" rel="noopener"><img src="img/medios/accesibilidad.jpg" alt="Panel de accesibilidad" loading="lazy"></a><figcaption><b>Panel de accesibilidad</b>Lector de voz, manos libres y modo daltónico.</figcaption></figure>
+      <figure><a href="img/medios/acceso.jpg" target="_blank" rel="noopener"><img src="img/medios/acceso.jpg" alt="Ingreso a la sala de redacción digital" loading="lazy"></a><figcaption><b>Sala de redacción digital</b>Acceso seguro para lectores y para el equipo.</figcaption></figure>
+      <figure><a href="img/medios/galerias.jpg" target="_blank" rel="noopener"><img src="img/medios/galerias.jpg" alt="Galerías de sociales" loading="lazy"></a><figcaption><b>Galerías de sociales</b>Fotos de eventos para que cada lector se encuentre.</figcaption></figure>
+    </div>
+    <div class="mdf">
+      <div class="card"><span class="ic">🔊</span><h4>Escuchar las noticias</h4><p>Lee en voz alta titulares y notas completas, pensado para personas ciegas o con baja visión. Velocidad lenta, normal o rápida.</p></div>
+      <div class="card"><span class="ic">🎙️</span><h4>Manos libres</h4><p>Se maneja el lector con la voz, sin tocar la pantalla. Además tiene atajos de teclado.</p></div>
+      <div class="card"><span class="ic">🎨</span><h4>Modo daltónico</h4><p>Paletas para protanopía, deuteranopía y tritanopía que corrigen los colores de secciones, mercados y fotos.</p></div>
+      <div class="card"><span class="ic">👨‍👩‍👧</span><h4>Activarlo para un familiar</h4><p>Se deja prendido en el dispositivo o se envía un link por WhatsApp que lo activa solo al abrirlo.</p></div>
+      <div class="card"><span class="ic">🔒</span><h4>Seguridad</h4><p>Conexión cifrada, verificación en dos pasos y accesos auditados en el panel de gestión.</p></div>
+      <div class="card"><span class="ic">💬</span><h4>Lectores conectados</h4><p>Ingreso con código de WhatsApp, suscripciones, clasificados y bolsa de empleos.</p></div>
+      <div class="card"><span class="ic">📻</span><h4>Multimedia en vivo</h4><p>Radio en vivo, transmisiones, edición impresa digital y galerías de fotos.</p></div>
+      <div class="card"><span class="ic">📈</span><h4>Datos al instante</h4><p>Clima de Santiago del Estero, cotizaciones, dólar y bitcoin, siempre visibles.</p></div>
+      <div class="card"><span class="ic">📱</span><h4>App móvil</h4><p>Próximamente: la app de Nuevo Diario para iOS y Android, con alertas.</p></div>
     </div>
   </section>
 
